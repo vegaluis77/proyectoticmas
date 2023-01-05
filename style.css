@@ -1,0 +1,81 @@
+/* -------custom properties---------- */
+ * { 
+    /* variables para todo el documento */
+    
+    box-sizing: border-box;
+}
+/* --------reset styles------------ */
+  div {
+    border: 2px solid black;
+  }
+
+  main {
+     border: 2px solid red;
+     margin-top: 5rem ;
+    
+  }
+  
+
+/* -------Boostrap styles------------- */
+
+
+/* ------my styles--------------------- */
+  .foto {
+    border-radius: 50%;
+    margin-top: 2rem ;
+  }
+  .nombre {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    border-bottom: 2px solid;
+    display: inline-block;
+  }
+
+/* ---------------------------------------------------------------------- */
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+ /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {  } 
+
+/* // Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) { 
+   
+   
+  } 
+
+/* // X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) { 
+   
+    
+  } 
+ 
+/* // XX-Large devices (larger desktops, 1400px and up) */
+ @media (min-width: 1400px) {  } 
+
+ /*------- Breakpoint	Class infix	Dimensions----------------
+ Extra small	    None	<576px
+ Small	             sm	    ≥576px
+ Medium	             md	    ≥768px
+ Large	             lg  	≥992px
+ Extra large	     xl	    ≥1200px
+ Extra extra large	 xxl	≥1400px */
+
+
+
+
+
+
+.x {
+    font-family: 'Rubik', sans-serif;
+    font-weight:400 ;
+    font-style: italic;
+}
+.space::after {
+    content: '\A\A';
+    white-space: pre;
+  }
