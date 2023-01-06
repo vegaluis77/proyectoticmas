@@ -6,7 +6,7 @@
 }
 /* --------reset styles------------ */
   div {
-    border: 2px solid black;
+    border: 2px solid rgb(251, 249, 249);
   }
 
   main {
@@ -122,3 +122,44 @@
     background-color: rgb(255, 34, 0);
 }
 
+  /* -tootip */
+  /* <div id="tooltip"> */
+  #tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 7px;
+  }
+  /*  <span id="tooltiptext"> mas infomacion sobre mi</span> */
+  #tooltiptext {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: #060606;
+    color: #fbfbfb;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  #tooltiptext::before {
+    content:"" ;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 5px solid;
+    border-color: #060606 transparent transparent ;
+
+  }
+  #tooltip:hover #tooltiptext {
+    top: -27%;
+    visibility: visible;
+    opacity: 1;
+  }
