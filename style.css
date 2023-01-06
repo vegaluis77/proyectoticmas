@@ -12,13 +12,35 @@
   main {
      border: 2px solid red;
      margin-top: 5rem ;
-    
+    margin-left: -5px;
   }
   
 
 /* -------Boostrap styles------------- */
-
-
+.bi-telephone-fill {
+  width: 20px;
+  height: 20px;
+}
+ #collapseTwo.mostrarDiv {
+  display: none;
+ }
+ .btn-outline-secondary {
+  /* --bs-btn-color: #6c757d; */
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-hover-color: #060606;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #fbfbfb;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #080808;
+  --bs-btn-active-bg: #fbfbfb;
+  --bs-btn-active-border-color: #ffffff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #74a8d7;
+  --bs-btn-disabled-bg: transparent;
+  /* --bs-btn-disabled-border-color: #6c757d; */
+  --bs-gradient: none;
+}
+ 
 /* ------my styles--------------------- */
   .foto {
     border-radius: 50%;
@@ -30,9 +52,10 @@
     font-size: larger;
     border-bottom: 2px solid;
     display: inline-block;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
   }
+  
 
 /* ---------------------------------------------------------------------- */
 /* // X-Small devices (portrait phones, less than 576px)
@@ -81,3 +104,21 @@
     content: '\A\A';
     white-space: pre;
   }
+  .fuera {
+    display: none;
+  }
+  .ver {
+    display: inline-flex;
+  }
+
+  .accordion-button .collapsed .fuera {
+    display: none;
+  }
+  .colorss {
+      background-color: blue;
+  }
+
+  .colorsss {
+    background-color: rgb(255, 34, 0);
+}
+
