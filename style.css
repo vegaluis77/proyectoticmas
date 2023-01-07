@@ -5,14 +5,13 @@
     box-sizing: border-box;
 }
 /* --------reset styles------------ */
-  div {
-    border: 2px solid rgb(251, 249, 249);
-  }
+ 
 
   main {
-     border: 2px solid red;
+   
      margin-top: 5rem ;
     margin-left: -5px;
+    max-width: 990px;
   }
   
 
@@ -25,22 +24,29 @@
   display: none;
  }
  .btn-outline-secondary {
-  /* --bs-btn-color: #6c757d; */
-  --bs-btn-border-color: transparent !important;
-  --bs-btn-hover-color: #060606;
-  --bs-btn-hover-bg: #ffffff;
-  --bs-btn-hover-border-color: #fbfbfb;
+  --bs-btn-color: #000000;
+  --bs-btn-border-color: #ff000000;
+  --bs-btn-hover-color: #484545;
+  --bs-btn-hover-bg: background: linear-gradient(90deg, rgba(234,236,198,1) 0%, rgba(43,192,228,1) 100%);
+  --bs-btn-hover-border-color: background: linear-gradient(90deg, rgba(234,236,198,1) 0%, rgba(43,192,228,1) 100%);
   --bs-btn-focus-shadow-rgb: 108, 117, 125;
-  --bs-btn-active-color: #080808;
-  --bs-btn-active-bg: #fbfbfb;
-  --bs-btn-active-border-color: #ffffff;
+  --bs-btn-active-color: #111112;
+  --bs-btn-active-bg: background: linear-gradient(90deg, rgba(234,236,198,1) 0%, rgba(43,192,228,1) 100%);
+  --bs-btn-active-border-color: #fa0a0a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #74a8d7;
   --bs-btn-disabled-bg: transparent;
-  /* --bs-btn-disabled-border-color: #6c757d; */
+  --bs-btn-disabled-border-color: #ff1373;
   --bs-gradient: none;
 }
- 
+.btn {
+  --bs-btn-border-width: transparent;
+}
+.bi {
+  font-size: x-large;
+  border-radius: 40%;
+  color: rgb(245, 251, 251);
+}
 /* ------my styles--------------------- */
   .foto {
     border-radius: 50%;
@@ -55,8 +61,37 @@
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
-  
+  #section1 {
+    background: rgb(234,236,198);
+    background: linear-gradient(90deg, rgba(234,236,198,1) 0%, rgba(43,192,228,1) 100%);
+  }
+  #section2{
+    color: #f8f6f6;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 900;
+    word-break: break-all;
+    text-align: start;
+    background: rgb(67,198,172);
+    background: linear-gradient(90deg, rgba(67,198,172) 0%, rgba(25,22,84,1) 100%);
+  }
 
+  #section3{
+    color: #484747;
+    font-style: oblique;
+    font-weight: 900;
+    background: rgb(43,192,228);
+    background: linear-gradient(90deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 100%);
+  }
+  #section4{
+    background: rgb(43,192,228);
+    background: linear-gradient(90deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 100%);
+  }
+  .mi-card ,.card2,.card3 {
+    background-color: black;
+    margin-bottom: 20px;
+    color: azure;
+  }
 /* ---------------------------------------------------------------------- */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
@@ -139,7 +174,7 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    background-color: #060606;
+    background-color: aqua;
     color: #fbfbfb;
     white-space: nowrap;
     padding: 5px 10px;
@@ -151,15 +186,20 @@
   #tooltiptext::before {
     content:"" ;
     position: absolute;
-    left: 50%;
+    left: 35%;
     top: 100%;
+   
     transform: translateX(-50%);
-    border: 5px solid;
-    border-color: #060606 transparent transparent ;
+    border: 15px solid;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-color:aqua   transparent transparent  aqua ;
 
   }
   #tooltip:hover #tooltiptext {
-    top: -27%;
+    top: -190%;
     visibility: visible;
     opacity: 1;
   }
+
+   
