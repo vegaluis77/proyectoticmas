@@ -11,9 +11,11 @@
    
      margin-top: 5rem ;
     margin-left: -5px;
-    max-width: 990px;
+    max-width: 860px;
   }
-  
+  li {
+    list-style: none;
+  }
 
 /* -------Boostrap styles------------- */
 .bi-telephone-fill {
@@ -47,11 +49,42 @@
   border-radius: 40%;
   color: rgb(245, 251, 251);
 }
+.bi-paperclip {
+  color: #000000;
+}
+.modal-header {
+  background: rgb(43,192,228);
+background: linear-gradient(182deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 100%);
+}
+.modal-body {
+  background: rgb(43,192,228);
+background: linear-gradient(352deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 100%);
+}
+.modal-footer { 
+  background: rgb(43,192,228);
+  background: linear-gradient(359deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 100%);
+}
+
 /* ------my styles--------------------- */
   .foto {
     border-radius: 50%;
     margin-top: 2rem ;
   }
+  .foto-2 {
+    margin-left: 30%;
+    border-radius: 50%;
+    margin-bottom: 5%;
+
+  }
+  .contendor-h3-modals {
+    border-bottom: 1px solid black;
+    margin-bottom: 3%;
+  }
+  .h3modals {
+    display: inline-block;
+    margin-left: 5%;
+   
+}
   .nombre {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -98,6 +131,18 @@
 // No media query for `xs` since this is the default in Bootstrap */
 
  /* // Small devices (landscape phones, 576px and up) */
+
+ /* // Small devices (landscape phones, 576px and up) */
+ @media (max-width: 280px) {
+  .foto-2 {
+    margin-left: 21%;
+ }
+ .h3modals {
+  margin-left: 2%;
+  
+  display: inline-block;
+}
+ }
 @media (min-width: 576px) {}
 
 /* // Medium devices (tablets, 768px and up) */
