@@ -5,13 +5,20 @@
     box-sizing: border-box;
 }
 /* --------reset styles------------ */
- 
+  body {
+    
+    background-image: url(img/fondo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+  }
 
   main {
    
-     margin-top: 5rem ;
+     margin-top: 3rem ;
     margin-left: -5px;
-    max-width: 860px;
+    
+    
+    
   }
   li {
     list-style: none;
@@ -156,7 +163,9 @@ background: linear-gradient(352deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 1
 
 /* // X-Large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px) { 
-   
+   .container {
+    max-width: 770px;
+   }
     
   } 
  
