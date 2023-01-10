@@ -20,9 +20,7 @@
     
     
   }
-  li {
-    list-style: none;
-  }
+  
 
 /* -------Boostrap styles------------- */
 .bi-telephone-fill {
@@ -133,6 +131,30 @@ background: linear-gradient(352deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 1
     margin-bottom: 20px;
     color: azure;
   }
+  .ol-menu {
+    text-align: start;
+    list-style: disc;
+    margin-left: 8%;
+  }
+  .li-menu {
+    list-style: initial;
+  }
+  .fecha {
+    padding: 0;
+    padding-left: 10px;
+    text-align: initial;
+    border-bottom: 1px dotted;
+    border-bottom-color: aqua;
+    color: aqua;
+  }
+  .puesto {
+    padding: 0;
+    text-align: center;
+  }
+  .lugar {
+    text-align: left;
+    padding-left: 2%;
+  }
 /* ---------------------------------------------------------------------- */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
@@ -140,7 +162,7 @@ background: linear-gradient(352deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 1
  /* // Small devices (landscape phones, 576px and up) */
 
  /* // Small devices (landscape phones, 576px and up) */
- @media (max-width: 280px) {
+ @media (max-width: 360px) {
   .foto-2 {
     margin-left: 21%;
  }
@@ -149,12 +171,27 @@ background: linear-gradient(352deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 1
   
   display: inline-block;
 }
+.col-10 {
+ 
+    flex: 0 0 auto;
+    width: 83.333333%;
+    font-size: small;
+
  }
-@media (min-width: 576px) {}
+ }
+@media (min-width: 576px) {
+
+}
 
 /* // Medium devices (tablets, 768px and up) */
- @media (min-width: 768px) {  } 
-
+ @media (min-width: 768px) { 
+  
+  } 
+ 
+ @media (max-width: 768px) {
+  
+   } 
+ 
 /* // Large devices (desktops, 992px and up) */
  @media (min-width: 992px) { 
    
@@ -170,7 +207,9 @@ background: linear-gradient(352deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 1
   } 
  
 /* // XX-Large devices (larger desktops, 1400px and up) */
- @media (min-width: 1400px) {  } 
+ @media (min-width: 1400px) { 
+  
+  } 
 
  /*------- Breakpoint	Class infix	Dimensions----------------
  Extra small	    None	<576px
