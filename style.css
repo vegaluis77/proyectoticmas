@@ -135,10 +135,14 @@ background: linear-gradient(352deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 1
     text-align: start;
     list-style: disc;
     margin-left: 8%;
+    
   }
-  .li-menu {
-    list-style: initial;
+  .formacion {
+    margin-left: 1%;
   }
+   li::marker {
+    color: #2bc0e4;
+   }
   .fecha {
     padding: 0;
     padding-left: 10px;
