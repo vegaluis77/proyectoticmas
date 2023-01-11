@@ -162,6 +162,23 @@ font-family: monospace;
     text-align: left;
     padding-left: 2%;
   }
+  #mapa {
+    border-bottom: 1px solid #f5efef;
+  
+  }
+  #mapa:hover {
+    cursor: pointer;
+  }
+  .mapa{
+    border-color: #2bc0e4;
+    display: none;
+  }
+  .mostrar {
+    display: block;
+  }
+  .correo {
+    color: #f8f6f6;
+  }
 /* ---------------------------------------------------------------------- */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
