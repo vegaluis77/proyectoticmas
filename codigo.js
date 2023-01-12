@@ -45,10 +45,9 @@
           parar()
         */
        
-//-----------------------------------------------------------------------------
+//-------------------------COLAMPSE MOSTRAR----------------------------------------------------
             const cajas = document.getElementsByTagName('div');
-            const mapa = document.getElementById('mapa')
-           // console.log(mapita)
+          
       document.addEventListener("click",(e)=> {
          
         if(!e.target.matches(".collapsed")) {
@@ -65,14 +64,32 @@
               
              
         }
-
-      // visualizar el mapa
-      if(e.target.matches("#mapa")) {         
-        console.log('se mostrara el  mapa')
-        const mapita =document.getElementsByClassName('mapa')[0];
-
-         mapita.classList.add('mostrar');
-
-      }
-
           });
+
+  //---------------------ICONOS DE MENSAJES-------------------------------------        
+
+
+  const numero = document.getElementById("numero");
+  const wsp = document.getElementById("wsp");
+  const tlgrm = document.getElementById("tlgram");
+
+
+
+   numero.addEventListener("mouseenter", (event) => {
+  
+ 
+  wsp.style.color = "chartreuse";
+  tlgrm.style.color = "#909ffd";
+
+ 
+  // reset 
+  setTimeout(() => {
+    
+    wsp.style.color ="";
+    tlgrm.style.color ="";
+
+
+
+
+  }, 1500);
+}, false);

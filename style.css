@@ -20,7 +20,9 @@
     
     
   }
-  
+  a {
+    color: transparent;
+  }
 
 /* -------Boostrap styles------------- */
 .bi-telephone-fill {
@@ -179,6 +181,18 @@ font-family: monospace;
   .correo {
     color: #f8f6f6;
   }
+  #numero {
+     border-bottom: 1px solid;
+    cursor: pointer;
+  }
+  #wsp:hover {
+    color: chartreuse ;
+   
+  }
+  #tlgram:hover {
+    color: #909ffd;
+  }
+  
 /* ---------------------------------------------------------------------- */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
