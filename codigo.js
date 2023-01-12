@@ -71,8 +71,10 @@
      constructor(){
        this.sonido = new Audio();
       this.sonido.src="sound/pop_.ogg";
+      this.sonido.muted= true;
      }
      daleplay(){
+      this.sonido.muted=false;
       this.sonido.play()
      }
 
