@@ -185,14 +185,20 @@ font-family: monospace;
      border-bottom: 1px solid;
     cursor: pointer;
   }
+  /* #wsp , #tlgram {
+    
+  } */
   #wsp:hover {
     color: chartreuse ;
-   
+    display: inline-block;
   }
   #tlgram:hover {
     color: #909ffd;
+    display: inline-block;
   }
-  
+  .ocultar {
+   display: none;
+  }
 /* ---------------------------------------------------------------------- */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */

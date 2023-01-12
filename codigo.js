@@ -66,6 +66,18 @@
         }
           });
 
+   //-----------------------class sonido-------------------------------
+  class Sound {
+     constructor(){
+       this.sonido = new Audio();
+      this.sonido.src="sound/pop_.ogg";
+     }
+     daleplay(){
+      this.sonido.play()
+     }
+
+  }
+
   //---------------------ICONOS DE MENSAJES-------------------------------------        
 
 
@@ -73,14 +85,19 @@
   const wsp = document.getElementById("wsp");
   const tlgrm = document.getElementById("tlgram");
 
-
+    
 
    numero.addEventListener("mouseenter", (event) => {
   
- 
+    let burbuja = new Sound();
+    burbuja.daleplay();    
+  
+
   wsp.style.color = "chartreuse";
   tlgrm.style.color = "#909ffd";
 
+  wsp.classList.remove("ocultar");
+  tlgrm.classList.remove("ocultar");
  
   // reset 
   setTimeout(() => {
@@ -88,8 +105,11 @@
     wsp.style.color ="";
     tlgrm.style.color ="";
 
+    wsp.classList.add('ocultar');
+    tlgrm.classList.add('ocultar');
 
 
 
-  }, 1500);
-}, false);
+
+  }, 5000);
+} );
