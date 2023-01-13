@@ -1,29 +1,23 @@
-/* -------custom properties---------- */
+ /* variables para todo el documento */
  * { 
-    /* variables para todo el documento */
-    
     box-sizing: border-box;
 }
-/* --------reset styles------------ */
+ /* --------------------------------------- */
   body {
-    
     background-image: url(img/fondo.jpg);
     background-repeat: repeat;
     background-size: cover;
   }
-
   main {
-   
      margin-top: 3rem ;
     margin-left: -5px;
-    
-    
-    
   }
+  li::marker {
+    color: #2bc0e4;
+   }
   a {
     color: transparent;
   }
-
 /* -------Boostrap styles------------- */
 .bi-telephone-fill {
   width: 20px;
@@ -73,8 +67,10 @@ font-family: monospace;
   background: rgb(43,192,228);
   background: linear-gradient(359deg, rgba(43,192,228,1) 0%, rgba(234,236,198,1) 100%);
 }
-
-/* ------my styles--------------------- */
+.accordion-button .collapsed .fuera {
+  display: none;
+}
+/* ------class , id--------------------- */
   .foto {
     border-radius: 50%;
     margin-top: 2rem ;
@@ -121,8 +117,6 @@ font-family: monospace;
   #numero:hover, #mapa:hover,  .correo:hover {
     color: aquamarine;
   }
- 
-
   #section3{
     color: #484747;
     font-style: oblique;
@@ -149,9 +143,6 @@ font-family: monospace;
   .formacion {
     margin-left: 1%;
   }
-   li::marker {
-    color: #2bc0e4;
-   }
   .fecha {
     padding: 0;
     padding-left: 10px;
@@ -189,20 +180,56 @@ font-family: monospace;
      border-bottom: 1px solid;
     cursor: pointer;
   }
-  /* #wsp , #tlgram {
-    
-  } */
   #wsp:hover {
     color: chartreuse ;
-    display: inline-block;
-  }
-  #tlgram:hover {
-    color: #909ffd;
     display: inline-block;
   }
   .ocultar {
    display: none;
   }
+  #tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 7px;
+  }
+  #tooltiptext {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: rgb(16, 200, 200);
+    color: #fbfbfb;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  #tooltiptext::before {
+    content:"" ;
+    position: absolute;
+    left: 35%;
+    top: 100%;
+   
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-color:rgb(16, 200, 200)  transparent transparent rgb(16, 200, 200) ;
+
+  }
+  #tooltip:hover #tooltiptext {
+    top: -190%;
+    visibility: visible;
+    opacity: 1;
+  }
+
+   
 /* ---------------------------------------------------------------------- */
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
@@ -242,17 +269,14 @@ font-family: monospace;
  @media (min-width: 768px) { 
   
   } 
- 
  @media (max-width: 768px) {
   
    } 
- 
 /* // Large devices (desktops, 992px and up) */
  @media (min-width: 992px) { 
    
    
   } 
-
 /* // X-Large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px) { 
    .container {
@@ -260,95 +284,32 @@ font-family: monospace;
    }
     
   } 
- 
 /* // XX-Large devices (larger desktops, 1400px and up) */
  @media (min-width: 1400px) { 
   
   } 
 
  /*------- Breakpoint	Class infix	Dimensions----------------
- Extra small	    None	<576px
- Small	             sm	    ≥576px
- Medium	             md	    ≥768px
- Large	             lg  	≥992px
- Extra large	     xl	    ≥1200px
- Extra extra large	 xxl	≥1400px */
+ Extra small	      None	   <576px
+ Small	             sm	     ≥576px
+ Medium	             md	     ≥768px
+ Large	             lg  	   ≥992px
+ Extra large	       xl	     ≥1200px
+ Extra extra large	 xxl	   ≥1400px */
 
 
 
 
 
 
-.x {
-    font-family: 'Rubik', sans-serif;
-    font-weight:400 ;
-    font-style: italic;
-}
-.space::after {
-    content: '\A\A';
-    white-space: pre;
-  }
-  .fuera {
-    display: none;
-  }
-  .ver {
-    display: inline-flex;
-  }
 
-  .accordion-button .collapsed .fuera {
-    display: none;
-  }
-  .colorss {
-      background-color: blue;
-  }
 
-  .colorsss {
-    background-color: rgb(255, 34, 0);
-}
+  
+  
 
-  /* -tootip */
-  /* <div id="tooltip"> */
-  #tooltip {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 7px;
-  }
-  /*  <span id="tooltiptext"> mas infomacion sobre mi</span> */
-  #tooltiptext {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    background-color: rgb(16, 200, 200);
-    color: #fbfbfb;
-    white-space: nowrap;
-    padding: 5px 10px;
-    border-radius: 7px;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  #tooltiptext::before {
-    content:"" ;
-    position: absolute;
-    left: 35%;
-    top: 100%;
-   
-    transform: translateX(-50%);
-    border: 15px solid;
-    border-left: 5px solid;
-    border-right: 5px solid;
-    border-color:rgb(16, 200, 200)  transparent transparent rgb(16, 200, 200) ;
+  
+ 
+  
 
-  }
-  #tooltip:hover #tooltiptext {
-    top: -190%;
-    visibility: visible;
-    opacity: 1;
-  }
-
-   
+ 
+ 

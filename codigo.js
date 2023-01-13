@@ -1,8 +1,4 @@
-
-      
-       
-
-     //---------------------------------------------------
+  //----------------------cambia el color de los iconos del nav-----------------------------
           const iconos = document.querySelectorAll('.btn-outline-info');
                     
           function resaltar(){
@@ -45,7 +41,7 @@
           parar()
         */
        
-//-------------------------COLAMPSE MOSTRAR----------------------------------------------------
+//-------------------------COLAPSE MOSTRAR----------------------------------------------------
             const cajas = document.getElementsByTagName('div');
           
       document.addEventListener("click",(e)=> {
@@ -81,38 +77,21 @@
   }
 
   //---------------------ICONOS DE MENSAJES-------------------------------------        
-
-
   const numero = document.getElementById("numero");
   const wsp = document.getElementById("wsp");
-  const tlgrm = document.getElementById("tlgram");
-
-    
-
+  
    numero.addEventListener("mouseenter", (event) => {
   
     let burbuja = new Sound();
     burbuja.daleplay();    
   
-
   wsp.style.color = "chartreuse";
-  tlgrm.style.color = "#909ffd";
-
   wsp.classList.remove("ocultar");
-  tlgrm.classList.remove("ocultar");
  
   // reset 
   setTimeout(() => {
-    
     wsp.style.color ="";
-    tlgrm.style.color ="";
-
     wsp.classList.add('ocultar');
-    tlgrm.classList.add('ocultar');
-
-
-
-
   }, 5000);
 },true );
-
+//---------------------------------------------------------------------
