@@ -118,6 +118,10 @@ font-family: monospace;
     background: rgb(67,198,172);
     background: linear-gradient(90deg, rgba(67,198,172) 0%, rgba(25,22,84,1) 100%);
   }
+  #numero:hover, #mapa:hover,  .correo:hover {
+    color: aquamarine;
+  }
+ 
 
   #section3{
     color: #484747;
@@ -222,9 +226,16 @@ font-family: monospace;
     font-size: small;
 
  }
+ 
+ }
+ @media (max-width:540px){
+  #section2 {
+
+    height: 200px;
+  }
  }
 @media (min-width: 576px) {
-
+  
 }
 
 /* // Medium devices (tablets, 768px and up) */

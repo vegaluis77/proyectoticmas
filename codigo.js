@@ -11,7 +11,7 @@
                         
                    setTimeout(mover1 =>{
                     if(i===0){
-                      iconos[i].style.color= "black";
+                      iconos[i].style.color= "aqua";
                     }else{
                       iconos[i].style.color= "white";
                     }
@@ -19,7 +19,7 @@
                    
                 setTimeout(mover2 =>{
                   if(i===1){
-                    iconos[i].style.color= "black";
+                    iconos[i].style.color= "aqua";
                   }else{
                     iconos[i].style.color= "white";
                   }
@@ -27,7 +27,7 @@
 
                   setTimeout(mover2 =>{
                     if(i===2){
-                      iconos[i].style.color= "black";
+                      iconos[i].style.color= "aqua";
                     }else{
                       iconos[i].style.color= "white";
                     }
@@ -75,7 +75,7 @@
      }
      daleplay(){
       this.sonido.muted=false;
-      this.sonido.play()
+      this.sonido.play();
      }
 
   }
@@ -114,4 +114,5 @@
 
 
   }, 5000);
-} );
+},true );
+
